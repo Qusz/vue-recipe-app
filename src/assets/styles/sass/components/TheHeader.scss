@@ -1,0 +1,44 @@
+@use '../base/' as *;
+
+.header {
+  background-color: $clr-secondary;
+  box-shadow: 0px 1px 10px #999;
+}
+
+.navbar {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-block: $spacer-s;
+
+    &__logo {
+      font-family: 'Roboto-Bold';
+      font-size: $fs-l;
+    }
+
+    &__items {
+      font-family: 'Roboto-Medium';
+      font-size: $fs-m;
+
+      display: flex;
+      gap: $spacer-xs;
+    }
+
+    &__item {
+      transition: all .2s ease;
+
+        &:hover {
+          color: $clr-accent;
+        }
+    }
+
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+}
