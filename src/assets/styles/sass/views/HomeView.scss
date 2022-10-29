@@ -1,0 +1,30 @@
+@use '../base/' as *;
+
+.home {
+
+  margin-top: $spacer-m;
+
+  display: flex;
+  flex-direction: column;
+
+  &__hr {
+    margin: 0;
+    border: none;
+    height: 2px;
+    background-color: $clr-black;
+  }
+
+  &__add-button {
+    align-self: flex-end;
+    margin-top: $spacer-s;
+  }
+
+  &__cards {
+    margin-top: $spacer-s;
+    
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+}

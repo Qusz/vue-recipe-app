@@ -1,0 +1,42 @@
+@use '../base/' as *;
+
+.recipe {
+  margin: $spacer-l auto $spacer-l auto;
+  padding: $spacer-s $spacer-m;
+  background-color: $clr-white;
+  border-radius: 15px;
+
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+
+  max-width: 800px;
+
+    &__title {
+      font-family: 'Roboto-Bold';
+      font-size: $fs-l;
+    }
+
+    &__ingredients-tile {
+      font-family: 'Roboto-Bold';
+      font-size: $fs-m;
+    }
+
+    &__description,
+    &__ingredients,
+    &__instructions {
+      font-family: 'Inter';
+      font-size: $fs-s;
+      line-height: 1.5;
+    }
+
+    &__ingredients {
+      font-weight: 600;
+    }
+
+    &__ingredients {
+      padding-block: $spacer-s;
+      margin: $spacer-xs 0 $spacer-m 0 ;
+      border-block: 2px solid $clr-black;
+    }
+}

@@ -3,7 +3,7 @@
 .card {
 
   //! Change width
-  max-width: 400px;
+  max-width: 300px;
 
   padding: $spacer-xs $spacer-s;
   background-color: $clr-white;
@@ -20,7 +20,7 @@
       font-size: $fs-m;
 
       padding-bottom: $spacer-s;
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid $clr-black;
     }
 
     &__body {
