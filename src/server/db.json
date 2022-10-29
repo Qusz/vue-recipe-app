@@ -6,7 +6,7 @@
     "ingredients": [
       {"ingredient": "name", "qty": "qty"}
     ],
-    "process": "blah blah blah"
+    "instructions": "blah blah blah"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "ingredients": [
       {"ingredient": "name", "qty": "qty"}
     ],
-    "process": "blah blah blah"
+    "instructions": "blah blah blah"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "ingredients": [
       {"ingredient": "name", "qty": "qty"}
     ],
-    "process": "blah blah blah"
+    "instructions": "blah blah blah"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "ingredients": [
       {"ingredient": "name", "qty": "qty"}
     ],
-    "process": "blah blah blah"
+    "instructions": "blah blah blah"
   },
   {
     "id": 5,
@@ -42,6 +42,6 @@
     "ingredients": [
       {"ingredient": "name", "qty": "qty"}
     ],
-    "process": "blah blah blah"
+    "instructions": "blah blah blah"
   }
 ]
