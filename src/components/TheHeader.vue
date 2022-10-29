@@ -3,15 +3,17 @@
   <header class="header">
     <div class="container">
       <nav class="navbar">
-        <div class="navbar__logo">
-          <a href="#">Recipes</a>
-        </div>
+        <router-link :to="{ name: 'HomeView'}" class="navbar__logo">
+          Recipes
+        </router-link>
         <ul class="navbar__items">
-          <li class="navbar__item"><a href="#">Home</a></li>
+          <li class="navbar__item"><router-link :to="{ name: 'HomeView'}">Home</router-link></li>
         </ul>
       </nav>
     </div>
   </header>
+  <router-view />
+
 </template>
 
 <script>
