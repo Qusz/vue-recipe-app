@@ -14,5 +14,47 @@
 
   display: flex;
   flex-direction: column;
+  gap: $spacer-m;
+
+    &__header {
+      align-self: center;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: $spacer-xs;
+    }
+
+    &__title {
+      font-size: $fs-m;
+
+      margin: 0;
+      text-align: center;
+    }
+
+    &__items {
+      margin-bottom: $spacer-s;
+      padding: 0;
+    }
+
+    &__ingredients {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__ingredient {
+      display: flex;
+      gap: $spacer-xxs;
+    }
+
+    &__ingredient-qty {
+      max-width: 60px;
+    }
+
+    &__button {
+      align-self: center;
+    }
 
 }
