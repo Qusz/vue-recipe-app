@@ -25,16 +25,21 @@
         <h2 class="add-recipe__title">
           Ingredients
         </h2>
-
         <div class="add-recipe__ingredients">
-
           <ul class="add-recipe__items">
             <li
               v-for="(item, i) in ingredients"
               :key="i" 
               class="add-recipe__item"
             >
-            {{ item.ingredient }}, {{ item.qty }}
+              {{ item.ingredient }}, {{ item.qty }} 
+
+              <button
+                @click="removeIngredient(i)"
+                class=""
+                >
+                -
+              </button>
             </li>
           </ul>
 
@@ -79,7 +84,7 @@
 
       <button 
         class="btn btn-accent add-recipe__button"
-        @click="test()">
+        @click="submitRecipe()">
         Add recipe
       </button>
     </section>
@@ -115,9 +120,10 @@ export default {
       this.ingredientName = "";
       this.ingredientQty = null;
     },
-    removeIngredient() {
-
+    removeIngredient(index) {
+      this.ingredients.splice(index, 1)
     },
+
     submitRecipe() {
 
     },
