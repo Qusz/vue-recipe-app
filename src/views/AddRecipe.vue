@@ -7,6 +7,21 @@
       </h1>
 
       <div class="add-recipe__wrapper">
+        <label for="recipe-name" class="add-recipe__title">
+          Recipe name
+        </label>
+        <textarea
+          v-model="name"
+          class="add-recipe__name"
+          name="recipe-name"
+          id="recipe-name"
+          cols="20"
+          rows="1"
+        >
+        </textarea>
+      </div>
+
+      <div class="add-recipe__wrapper">
         <label for="recipe-desc" class="add-recipe__title">
           Recipe Description
         </label>
@@ -94,23 +109,18 @@
 
 <script>
 
+import Server from '@/APIs/ServerAPI.js'
+
 export default {
   name: 'AddRecipe',
   data() {
     return {
-      currentId: 0,
+      name: "",
       description: "",
       ingredientName: "",
       ingredientQty: null,
       ingredients: [],
       instructions: "",
-      fullRecipe: {
-        "id": this.currentId,
-        "name": "",
-        "desc": "",
-        "ingredients": [],
-        "instructions": ""
-      }
     }
   },
   methods: {
@@ -125,11 +135,17 @@ export default {
     },
 
     submitRecipe() {
-
-    },
-    test() {
-      console.log(this.description, this.instructions);
+      const server = new Server();
+      server.addRecipe({
+        id: "",
+        name: this.name,
+        desc: this.description,
+        ingredients: this.ingredients,
+        instructions: this.instructions
+      }).
+        then(this.$router.push('/'));        
     }
+
   }
 }
 

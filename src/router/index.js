@@ -12,7 +12,8 @@ const routes = [
   {
     path: '/recipe/:id',
     name: 'RecipeView',
-    component: RecipeView
+    component: RecipeView,
+    props: true
   },
   {
     path: '/add-recipe',

@@ -3,37 +3,31 @@
   <div class="container">
     <section class="recipe">
       <h1 class="recipe__title">
-        Recipe Name
+        {{ this.recipes.name }}
       </h1>
       <p class="recipe__description">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure dolore at rerum illo magnam, quod odio maxime eligendi optio, consequatur nobis inventore nesciunt ratione aliquam facilis dolor. Odit, reiciendis molestiae.
+        {{ this.recipes.desc }}
       </p>
       <h2 class="recipe__ingredients-tile">
         Ingredients
       </h2>
       <ul class="recipe__ingredients">
-        <li class="recipe__ingredient">
-          Lorem, 30g
-        </li>
-        <li class="recipe__ingredient">
-          Lorem, 30g
-        </li>
-        <li class="recipe__ingredient">
-          Lorem, 30g
-        </li>
-        <li class="recipe__ingredient">
-          Lorem, 30g
-        </li>
-        <li class="recipe__ingredient">
-          Lorem, 30g
-        </li>
-        <li class="recipe__ingredient">
-          Lorem, 30g
+        <li
+          v-for="item in this.recipes.ingredients"
+          :key="item.id" 
+          class="recipe__ingredient">
+          {{ item.ingredient }}, {{ item.qty }}
         </li>
       </ul>
       <p class="recipe__instructions">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. At laboriosam qui quae nobis veritatis alias, quo voluptates doloremque, fugiat iusto, magni odio omnis eius voluptate ad ducimus? Quaerat, maxime. Nostrum, reiciendis libero blanditiis consectetur quam quas quibusdam doloribus. Fuga consequuntur esse sequi sint reiciendis fugit beatae, nihil quibusdam reprehenderit numquam? Expedita ratione odit ab tenetur temporibus quas soluta sint facilis, ipsum mollitia sit officiis, dolores sapiente facere nihil consectetur delectus? Corporis debitis illum fugit, ducimus voluptates deserunt numquam odio incidunt.
+        {{ this.recipes.instructions }}
       </p>
+      <button 
+        class=""
+        @click="this.deleteRecipe()"
+      >
+        Delete recipe
+      </button>
     </section>
   </div>
   
@@ -42,8 +36,40 @@
 
 <script>
 
+import Server from '@/APIs/ServerAPI.js'
+
 export default {
-  name: 'RecipeView'
+  name: 'RecipeView',
+  props: {
+    id: {
+      type: Number
+    }
+  },
+  created() {
+    this.getData();
+  },
+  data() {
+    return {
+      recipes: null
+    }
+
+  },
+  methods: {
+    getData() {
+      const server = new Server();
+      server.fetchRecipes().
+        then(data => {
+          // Change this
+          this.recipes = data[this.id - 1];
+        });
+    },
+    deleteRecipe() {
+      const server = new Server();
+      server.removeRecipe(this.id).
+        then(this.$router.push('/'));        
+    }
+
+  }
 }
 
 </script>
