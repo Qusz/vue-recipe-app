@@ -1,5 +1,4 @@
 <template>
-
   <div class="container">
     <section class="recipe">
       <h1 class="recipe__title">
@@ -30,7 +29,6 @@
       </button>
     </section>
   </div>
-  
 </template>
 
 
@@ -50,17 +48,20 @@ export default {
   },
   data() {
     return {
-      recipes: null
+      recipes: null,
+      loading: false
     }
 
   },
   methods: {
     getData() {
       const server = new Server();
+      this.loading = true;
       server.fetchRecipes().
         then(data => {
           // Change this
-          this.recipes = data[this.id - 1];
+          this.recipes = data[this.id];
+          this.loading = false;
         });
     },
     deleteRecipe() {

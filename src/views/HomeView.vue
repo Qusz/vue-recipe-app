@@ -11,12 +11,12 @@
    </router-link>
 
     <div 
-      v-for="item in this.recipes" 
+      v-for="(item, i) in this.recipes" 
       :key="item.id"
       class="home__cards" 
     >
       <router-link
-        :to="{ name: 'RecipeView', params: { id: item.id } }"
+        :to="{ name: 'RecipeView', params: { id: i } }"
       >
         <RecipeCard
           :header="item.name"
