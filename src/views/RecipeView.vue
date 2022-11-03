@@ -1,6 +1,10 @@
 <template>
+
   <div class="container">
-    <section class="recipe">
+    <div v-if="loading" class="loader">
+      <!--! Add spinner here -->
+    </div>
+    <section v-else class="recipe">
       <h1 class="recipe__title">
         {{ this.recipes.name }}
       </h1>

@@ -3,7 +3,6 @@
 * Change the design
 * Change header font 
 
-Create a modal for creating a new recipe
 
 Create json-server script
 Render recipes on main page
@@ -19,12 +18,10 @@ Add error handling for fetch requests
 Animate router transitions https://www.youtube.com/watch?v=L77Uq93XXzk
 Add dynamic page titles for each route
 Create a mixin for fetching data to avoid repetition https://chafikgharbi.com/vuejs-global-function/
-
-
-Refactor, so that recipe big card and add new recipe use the same component 
-
+Add 404
 
 
 
 
-On the recipe page there should be a button to delete the recipe
+
+

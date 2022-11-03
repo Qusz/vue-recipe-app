@@ -52,7 +52,7 @@
               <button
                 @click="removeIngredient(i)"
                 class=""
-                >
+              >
                 -
               </button>
             </li>
