@@ -2,11 +2,13 @@
 
   <div class="container home">
     <hr class="home__hr">
-    <BaseButton
-    :content="'Add New Recipe'" 
-    class="btn-accent home__add-button"
-    >
+    <router-link class="home__add-button" :to="{ name: 'AddRecipe'}">
+      <BaseButton
+      :content="'Add New Recipe'"
+      class="btn-accent"
+      >
     </BaseButton>
+   </router-link>
     <div class="home__cards">
       <RecipeCard class="home__card"></RecipeCard>
       <RecipeCard class="home__card"></RecipeCard>
@@ -20,6 +22,7 @@
       <RecipeCard class="home__card"></RecipeCard>
     </div>
   </div>
+  <rotuer-view />
 
 </template>
 
