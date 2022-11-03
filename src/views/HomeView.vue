@@ -9,6 +9,7 @@
       >
     </BaseButton>
    </router-link>
+
     <div class="home__cards">
       <RecipeCard class="home__card"></RecipeCard>
       <RecipeCard class="home__card"></RecipeCard>
@@ -28,9 +29,8 @@
 
 <script>
 
-import RecipeCard from '@/components/RecipeCard.vue';
+import RecipeCard from '@/components/RecipeCard.vue'
 import BaseButton from '@/components/BaseButton.vue'
-
 
 export default {
   name: 'HomeView',
