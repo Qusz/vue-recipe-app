@@ -4,13 +4,11 @@
 
   margin: $spacer-s auto $spacer-l auto;
   padding: $spacer-s $spacer-m;
-  background-color: $clr-white;
+  background-color: $clr-primary;
   border-radius: 15px;
-  max-width: 800px;
+  max-width: 50rem;
 
-  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 
   display: flex;
   flex-direction: column;
