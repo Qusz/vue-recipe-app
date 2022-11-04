@@ -14,6 +14,37 @@
   flex-direction: column;
   gap: $spacer-m;
 
+    textarea,
+    input {
+      border: none;
+      border-radius: 15px;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      background-color: $clr-white;
+      resize: none;
+
+        &:focus,
+        &:active {
+          outline: 2px solid $clr-secondary;
+        }
+    }
+
+    &__description,
+    &__instructions {
+      padding: $spacer-xs $spacer-xxs;
+    }
+
+    &__ingredient-name,
+    &__ingredient-qty {
+      padding: .2rem .5rem;
+      text-align: center;
+    }
+
+    &__name {
+      text-align: center;
+      align-self: center;
+      width: clamp(10rem, 25rem, 100%);
+    }
+
     &__header {
       align-self: center;
       font-family: 'Source Sans 700';
@@ -26,6 +57,12 @@
       gap: $spacer-xs;
     }
 
+    &__wrapper--row {
+      display: flex;
+      flex-direction: row;
+      gap: $spacer-xs;
+    }
+
     &__title {
       font-family: 'Source Sans 600';
       font-weight: 600;
@@ -33,6 +70,50 @@
 
       margin: 0;
       text-align: center;
+    }
+
+    &__items {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      display: flex;
+      flex-direction: column;
+      gap: $spacer-xs;
+    }
+    
+    &__item {
+      padding: .2rem .5rem;
+      background-color: $clr-white;
+
+      border-radius: 15px;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+      width: clamp(90%, 25rem, 35rem);
+
+        &:not(:first-child) {
+          margin-top: $spacer-s;
+        }
+    }
+
+    &__ingredients {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__ingredient {
+      margin-top: $spacer-m;
+      display: flex;
+      gap: $spacer-xxs;
+    }
+
+    &__ingredient-qty {
+      max-width: 60px;
+    }
+
+    &__button {
+      align-self: center;
     }
 
     &__name,
@@ -44,30 +125,6 @@
       font-family: 'Inter';
       font-size: $fs-s;
       line-height: 1.5;
-    }
-
-    &__items {
-      margin-bottom: $spacer-s;
-      padding: 0;
-    }
-
-    &__ingredients {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    &__ingredient {
-      display: flex;
-      gap: $spacer-xxs;
-    }
-
-    &__ingredient-qty {
-      max-width: 60px;
-    }
-
-    &__button {
-      align-self: center;
     }
 
 }

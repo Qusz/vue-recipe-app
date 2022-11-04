@@ -42,20 +42,21 @@
         </h2>
         <div class="add-recipe__ingredients">
           <ul class="add-recipe__items">
-            <li
+            <div 
+              class="add-recipe__wrapper--row"
               v-for="(item, i) in ingredients"
-              :key="i" 
-              class="add-recipe__item"
+              :key="i"
             >
-              {{ item.ingredient }}, {{ item.qty }} 
-
+              <li class="add-recipe__item">
+                {{ item.ingredient }}, {{ item.qty }}
+              </li>
               <BaseButton
                 @click="removeIngredient(i)"
-                :content="'x'"
+                :content="'Remove'"
                 class="btn-s btn-secondary"
               >
               </BaseButton>
-            </li>
+            </div>
           </ul>
 
           <form class="add-recipe__ingredient">
