@@ -25,12 +25,12 @@
       <p class="recipe__instructions">
         {{ this.recipes.instructions }}
       </p>
-      <button 
-        class=""
+      <BaseButton 
         @click="this.deleteRecipe()"
+        :content="'Delete recipe'"
+        class="btn-m btn-accent"
       >
-        Delete recipe
-      </button>
+      </BaseButton>
     </section>
   </div>
 </template>
@@ -39,9 +39,11 @@
 <script>
 
 import Server from '@/APIs/ServerAPI.js'
+import BaseButton from '@/components/BaseButton.vue';
 
 export default {
   name: 'RecipeView',
+  components: { BaseButton },
   props: {
     id: {
       type: Number

@@ -1,9 +1,8 @@
 @use '../base/' as *;
 
-.btn {
+@mixin btn {
   border: none;
   border-radius: 10px;
-  padding: $spacer-xxs $spacer-s;
   cursor: pointer;
 
   font-family: 'Source Sans 600';
@@ -22,6 +21,20 @@
     &:active {
       background-color: $bg-clr;
     }
+}
+
+.btn {
+  @include btn;
+}
+
+.btn-m {
+  @include btn;
+  padding: $spacer-xxs $spacer-s;
+}
+
+.btn-s {
+  @include btn;
+  padding: 0 $spacer-xxs;
 }
 
 .btn-accent {

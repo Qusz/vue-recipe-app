@@ -1,6 +1,5 @@
 # Styling
 
-Change color scheme
 Re-style buttons, make small buttons 
 Set min width for a card. And make sure they're always the same size no matter what 
 Change add recipe default input styling (including focus)

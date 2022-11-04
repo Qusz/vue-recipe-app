@@ -5,7 +5,7 @@
     <router-link class="home__add-button" :to="{ name: 'AddRecipe'}">
       <BaseButton
       :content="'Add New Recipe'"
-      class="btn-accent"
+      class="btn-m btn-accent"
       >
     </BaseButton>
    </router-link>

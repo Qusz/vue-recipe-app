@@ -49,12 +49,12 @@
             >
               {{ item.ingredient }}, {{ item.qty }} 
 
-              <button
+              <BaseButton
                 @click="removeIngredient(i)"
-                class=""
+                :content="'x'"
+                class="btn-s btn-secondary"
               >
-                -
-              </button>
+              </BaseButton>
             </li>
           </ul>
 
@@ -71,13 +71,13 @@
               class="add-recipe__ingredient-qty"
               placeholder="Qty"
             >
-            <button
+            <BaseButton
               @click.prevent="addIngredient()"
+              :content="'+'"
               type="submit"
-              class=""
+              class="btn-s btn-secondary"
             >
-              +
-            </button>
+            </BaseButton>
           </form>
         </div>
       </div>
@@ -97,11 +97,12 @@
         </textarea>
       </div>
 
-      <button 
-        class="btn btn-secondary add-recipe__button"
-        @click="submitRecipe()">
-        Add recipe
-      </button>
+      <BaseButton 
+        @click="submitRecipe()"
+        :content="'Add recipe'"
+        class="btn-m btn-accent add-recipe__button"
+      >
+      </BaseButton>
     </section>
   </div>
   
@@ -110,9 +111,11 @@
 <script>
 
 import Server from '@/APIs/ServerAPI.js'
+import BaseButton from '@/components/BaseButton.vue';
 
 export default {
   name: 'AddRecipe',
+  components: {BaseButton},
   data() {
     return {
       name: "",
