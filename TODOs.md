@@ -1,7 +1,5 @@
 # Styling
 
-Re-style buttons, make small buttons 
-Set min width for a card. And make sure they're always the same size no matter what 
 Change add recipe default input styling (including focus)
 Add animation to add/remove ingredient (there's a native Vue wave, look up in Notion notes)
 Remove default indent on 1st line of textarea
@@ -24,6 +22,7 @@ Add 404
 Add search
 Add infinite scrolling
 Add dynamic page titles for each route
+Refactor props
 
 # Maybe
 Create a mixin for fetching data to avoid repetition https://chafikgharbi.com/vuejs-global-function/

@@ -2,25 +2,27 @@
 
 .home {
 
-  margin-top: $spacer-m;
+  margin-block: $spacer-m;
 
   display: flex;
   flex-direction: column;
-
-  &__hr {
-    margin: 0;
-    border: none;
-    height: 2px;
-    background-color: $clr-black;
-  }
 
   &__cards {
     margin-top: $spacer-s;
     
     display: grid;
-    justify-items: center;
+    justify-items: stretch;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    gap: $spacer-xs;
+  }
+
+  &__wrapper {
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__add-button {

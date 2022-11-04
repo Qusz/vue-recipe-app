@@ -11,7 +11,6 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "core-js": "^3.8.3",
-    "normalize.css": "^8.0.1",
     "vue": "^3.2.13",
     "vue-router": "^4.1.6"
   },
@@ -25,6 +24,7 @@
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "json-server": "^0.17.0",
+    "normalize.css": "^8.0.1",
     "postcss": "^8.4.18",
     "postcss-cli": "^10.0.0",
     "sass": "^1.55.0",

@@ -1,7 +1,6 @@
 <template>
 
   <div class="container home">
-    <hr class="home__hr">
     <router-link class="home__add-button" :to="{ name: 'AddRecipe'}">
       <BaseButton
       :content="'Add New Recipe'"
@@ -10,23 +9,24 @@
     </BaseButton>
    </router-link>
 
-    <div 
-      v-for="(item, i) in this.recipes" 
-      :key="item.id"
-      class="home__cards" 
-    >
-      <router-link
-        :to="{ name: 'RecipeView', params: { id: i } }"
+    <div class="home__cards">
+      <div
+        v-for="(item, i) in this.recipes"
+        :key="item.id"
+        class="home__wrapper"
       >
-        <RecipeCard
-          :header="item.name"
-          :content="item.desc"
-          class="home__card">
-        </RecipeCard>
-      </router-link>
-
-
+        <router-link
+          :to="{ name: 'RecipeView', params: { id: i } }"
+        >
+          <RecipeCard
+            :header="item.name"
+            :content="item.desc"
+            class="home__card">
+          </RecipeCard>
+        </router-link>
+      </div>
     </div>
+
   </div>
   <rotuer-view />
 
@@ -34,9 +34,9 @@
 
 <script>
 
-import RecipeCard from '@/components/RecipeCard.vue'
-import BaseButton from '@/components/BaseButton.vue'
-import Server from '@/APIs/ServerAPI.js'
+import RecipeCard from '@/components/RecipeCard.vue';
+import BaseButton from '@/components/BaseButton.vue';
+import Server from '@/APIs/ServerAPI.js';
 
 export default {
   name: 'HomeView',

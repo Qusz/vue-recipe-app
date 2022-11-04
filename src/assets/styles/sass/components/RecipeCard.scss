@@ -2,8 +2,11 @@
 
 .card {
 
-  //! Change width
-  max-width: 300px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  width: clamp(12.5rem, 25rem, 80%);
+  height: 21.875rem;
 
   padding: $spacer-xs $spacer-s;
   background-color: $clr-primary;
@@ -29,8 +32,18 @@
       line-height: 1.5;
     }
 
+    &__content {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 10; 
+      line-clamp: 10; 
+    }
+
     &:hover {
       cursor: pointer;
+      border: 1px solid $clr-secondary;
       scale: 1.05;
     }
 }
