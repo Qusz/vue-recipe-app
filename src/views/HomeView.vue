@@ -1,14 +1,6 @@
 <template>
 
   <div class="container home">
-    <router-link class="home__add-button" :to="{ name: 'AddRecipe'}">
-      <BaseButton
-      :content="'Add New Recipe'"
-      class="btn-m btn-accent"
-      >
-    </BaseButton>
-   </router-link>
-
     <div class="home__cards">
       <div
         v-for="(item, i) in this.recipes"
@@ -35,12 +27,11 @@
 <script>
 
 import RecipeCard from '@/components/RecipeCard.vue';
-import BaseButton from '@/components/BaseButton.vue';
 import Server from '@/APIs/ServerAPI.js';
 
 export default {
   name: 'HomeView',
-  components: { RecipeCard, BaseButton },
+  components: { RecipeCard },
   created() {
     this.getData();
   },

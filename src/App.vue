@@ -1,6 +1,7 @@
 <template>
 
   <TheHeader></TheHeader>
+  <TheSidebar></TheSidebar>
 
 </template>
 

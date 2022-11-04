@@ -1,10 +1,8 @@
 # Styling
 
-Make navbar sticky
 Add animation to add/remove ingredient (there's a native Vue wave, look up in Notion notes)
 Animate router transitions https://www.youtube.com/watch?v=L77Uq93XXzk
 Add resposive design
-Add flex and text align center utl classes to avoid css cluttering, espc. in AddRecipe
 
 # Sidebar
 
@@ -31,7 +29,9 @@ Add dark theme
 # Polishing
 
 Clean up CSS classes, especially in AddRecipe
+Add flex and text align center utl classes to avoid css cluttering, espc. in AddRecipe
 Figure out how to use postcss with you for autoprefixer
+Add favicon
 
 
 

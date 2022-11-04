@@ -4,10 +4,22 @@
     <div class="container">
       <nav class="navbar">
         <router-link :to="{ name: 'HomeView'}" class="navbar__logo">
-          Recipes
+          Recipe Book
         </router-link>
         <ul class="navbar__items">
-          <li class="navbar__item"><router-link :to="{ name: 'HomeView'}">Home</router-link></li>
+          <li class="navbar__item">
+            <router-link :to="{ name: 'HomeView'}">
+              Home</router-link>
+            </li>
+          <li class="navbar__item navbar__add-button">
+            <router-link :to="{ name: 'AddRecipe'}">
+              <BaseButton
+                :content="'Add New Recipe'"
+                class="btn-m btn-secondary"
+              >
+              </BaseButton>
+            </router-link>
+          </li>
         </ul>
       </nav>
     </div>
@@ -18,8 +30,10 @@
 
 <script>
 
-export default {
+import BaseButton from '@/components/BaseButton.vue';
 
+export default {
+  components: { BaseButton }
 }
 
 </script>
