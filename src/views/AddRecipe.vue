@@ -98,7 +98,7 @@
       </div>
 
       <button 
-        class="btn btn-accent add-recipe__button"
+        class="btn btn-secondary add-recipe__button"
         @click="submitRecipe()">
         Add recipe
       </button>

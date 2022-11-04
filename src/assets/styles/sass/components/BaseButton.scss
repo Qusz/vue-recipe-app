@@ -27,3 +27,7 @@
 .btn-accent {
   @include btn-color($clr-accent, $clr-black);
 }
+
+.btn-secondary {
+  @include btn-color($clr-secondary, $clr-white);
+}

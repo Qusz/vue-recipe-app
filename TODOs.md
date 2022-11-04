@@ -1,7 +1,5 @@
 # Styling
 
-Change header font
-Change fonts on new elements
 Change color scheme
 Re-style buttons, make small buttons 
 Set min width for a card. And make sure they're always the same size no matter what 
@@ -17,6 +15,8 @@ Add sidebar
 Find icons for add (+), search
 
 # Logic
+
+!!! Can't delete some recipes for some reason. Something wrong with the router or json server and dynamic links
 
 Change fetchData method in recipeview
 Add error handling for fetch requests
