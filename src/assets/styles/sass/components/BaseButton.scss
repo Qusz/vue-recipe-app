@@ -5,6 +5,8 @@
   border-radius: 10px;
   padding: $spacer-xxs $spacer-s;
   cursor: pointer;
+
+  font-family: 'Source Sans 600';
 }
 
 @mixin btn-color ($bg-clr, $text-clr) {

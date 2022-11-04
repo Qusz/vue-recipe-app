@@ -13,12 +13,12 @@
   max-width: 800px;
 
     &__title {
-      font-family: 'Roboto-Bold';
+      font-family: 'Source Sans 700';
       font-size: $fs-l;
     }
 
     &__ingredients-tile {
-      font-family: 'Roboto-Bold';
+      font-family: 'Source Sans 700';
       font-size: $fs-m;
     }
 
@@ -28,10 +28,7 @@
       font-family: 'Inter';
       font-size: $fs-s;
       line-height: 1.5;
-    }
-
-    &__ingredients {
-      font-weight: 600;
+      font-weight: 400;
     }
 
     &__ingredients {

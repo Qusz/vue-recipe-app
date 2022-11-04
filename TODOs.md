@@ -1,25 +1,33 @@
-* Add box-shadow to buttons
-* Add infinite scrolling
-* Change the design
-* Change header font 
+# Styling
 
-
-Create json-server script
-Render recipes on main page
-Change fetchData method in recipeview
-Add create recipe
-Add delete recipe 
-Add animation to add/remove ingredient (there's a native Vue wave, look up in Notion notes)
-Change add recipe default input styling (incling focus)
-Add utility class instad of display flex everywhere
-Remove default indent on 1st line of textarea
+Change header font
+Change fonts on new elements
+Change color scheme
+Re-style buttons, make small buttons 
 Set min width for a card. And make sure they're always the same size no matter what 
-Add error handling for fetch requests
+Change add recipe default input styling (including focus)
+Add animation to add/remove ingredient (there's a native Vue wave, look up in Notion notes)
+Remove default indent on 1st line of textarea
 Animate router transitions https://www.youtube.com/watch?v=L77Uq93XXzk
-Add dynamic page titles for each route
-Create a mixin for fetching data to avoid repetition https://chafikgharbi.com/vuejs-global-function/
-Add 404
+Make navbar sticky
 
+# Sidebar
+
+Add sidebar
+Find icons for add (+), search
+
+# Logic
+
+Change fetchData method in recipeview
+Add error handling for fetch requests
+Add spinners for loading data
+Add 404
+Add search
+Add infinite scrolling
+Add dynamic page titles for each route
+
+# Maybe
+Create a mixin for fetching data to avoid repetition https://chafikgharbi.com/vuejs-global-function/
 
 
 

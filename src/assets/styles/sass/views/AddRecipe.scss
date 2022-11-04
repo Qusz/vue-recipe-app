@@ -18,6 +18,8 @@
 
     &__header {
       align-self: center;
+      font-family: 'Source Sans 700';
+      font-size: $fs-l;
     }
 
     &__wrapper {
@@ -27,10 +29,23 @@
     }
 
     &__title {
+      font-family: 'Source Sans 600';
+      font-weight: 600;
       font-size: $fs-m;
 
       margin: 0;
       text-align: center;
+    }
+
+    &__name,
+    &__description,
+    &__ingredients,
+    &__ingredient,
+    &__instructions {
+      
+      font-family: 'Inter';
+      font-size: $fs-s;
+      line-height: 1.5;
     }
 
     &__items {
