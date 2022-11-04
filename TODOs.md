@@ -4,10 +4,6 @@ Add animation to add/remove ingredient (there's a native Vue wave, look up in No
 Animate router transitions https://www.youtube.com/watch?v=L77Uq93XXzk
 Add resposive design
 
-# Sidebar
-
-Add sidebar
-Find icons for add (+), search
 
 # Logic
 
@@ -32,6 +28,7 @@ Clean up CSS classes, especially in AddRecipe
 Add flex and text align center utl classes to avoid css cluttering, espc. in AddRecipe
 Figure out how to use postcss with you for autoprefixer
 Add favicon
+Look up how to register components globally (need to make the button global)
 
 
 

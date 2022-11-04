@@ -74,7 +74,7 @@
 
     &__items {
       padding: 0;
-      margin: 0;
+      margin: $spacer-m 0 0 0;
       list-style: none;
 
       display: flex;
@@ -103,7 +103,7 @@
     }
 
     &__ingredient {
-      margin-top: $spacer-m;
+      margin-top: $spacer-s;
       display: flex;
       gap: $spacer-xxs;
     }
@@ -127,4 +127,24 @@
       line-height: 1.5;
     }
 
+
+    //* ============================
+    //* Ingredient list animation
+    //* ============================
+
+    .list-enter-active,
+    .list-leave-active,
+    .list-move {
+      transition: all .2s ease;
+    }
+
+    .list-enter-from,
+    .list-leave-to {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+
+    .list-leave-active {
+      position: absolute;
+    }
 }

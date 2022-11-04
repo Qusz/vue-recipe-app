@@ -40,24 +40,8 @@
         <h2 class="add-recipe__title">
           Ingredients
         </h2>
+
         <div class="add-recipe__ingredients">
-          <ul class="add-recipe__items">
-            <div 
-              class="add-recipe__wrapper--row"
-              v-for="(item, i) in ingredients"
-              :key="i"
-            >
-              <li class="add-recipe__item">
-                {{ item.ingredient }}, {{ item.qty }}
-              </li>
-              <BaseButton
-                @click="removeIngredient(i)"
-                :content="'Remove'"
-                class="btn-s btn-secondary"
-              >
-              </BaseButton>
-            </div>
-          </ul>
 
           <form class="add-recipe__ingredient">
             <input
@@ -80,6 +64,59 @@
             >
             </BaseButton>
           </form>
+
+
+
+          <transition-group 
+            class="add-recipe__items" 
+            tag="ul" 
+            name="list"
+          >
+            <div 
+              class="add-recipe__wrapper--row"
+              v-for="(item, i) in ingredients"
+              :key="item"
+            >
+              <li class="add-recipe__item">
+                {{ item.ingredient }}, {{ item.qty }}
+              </li>
+              <BaseButton
+                @click="removeIngredient(i)"
+                :content="'Remove'"
+                class="btn-s btn-secondary"
+              >
+              </BaseButton>
+            </div>
+          </transition-group>
+
+          
+
+
+
+
+
+
+
+          <!-- <ul class="add-recipe__items">
+            <div 
+              class="add-recipe__wrapper--row"
+              v-for="(item, i) in ingredients"
+              :key="i"
+            >
+              <li class="add-recipe__item">
+                {{ item.ingredient }}, {{ item.qty }}
+              </li>
+              <BaseButton
+                @click="removeIngredient(i)"
+                :content="'Remove'"
+                class="btn-s btn-secondary"
+              >
+              </BaseButton>
+            </div>
+          </ul> -->
+          
+
+ 
         </div>
       </div>
 
