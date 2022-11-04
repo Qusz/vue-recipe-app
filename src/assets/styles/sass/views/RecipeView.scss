@@ -3,18 +3,20 @@
 .recipe {
   margin: $spacer-l auto $spacer-l auto;
   padding: $spacer-s $spacer-m;
-  background-color: $clr-white;
+  background-color: $clr-primary;
   border-radius: 15px;
 
-  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 
   max-width: 800px;
+
+  display: flex;
+  flex-direction: column;
 
     &__title {
       font-family: 'Source Sans 700';
       font-size: $fs-l;
+      text-align: center;
     }
 
     &__ingredients-tile {
@@ -35,5 +37,10 @@
       padding-block: $spacer-s;
       margin: $spacer-xs 0 $spacer-m 0 ;
       border-block: 2px solid $clr-black;
+    }
+
+    &__btn-delete {
+      align-self: center;
+      margin-top: $spacer-m;
     }
 }

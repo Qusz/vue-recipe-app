@@ -28,7 +28,7 @@
       <BaseButton 
         @click="this.deleteRecipe()"
         :content="'Delete recipe'"
-        class="btn-m btn-accent"
+        class="btn-m btn-accent recipe__btn-delete"
       >
       </BaseButton>
     </section>
