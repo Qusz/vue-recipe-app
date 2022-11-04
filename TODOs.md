@@ -1,6 +1,5 @@
 # Styling
 
-Style recipe view 
 Make navbar sticky
 Add animation to add/remove ingredient (there's a native Vue wave, look up in Notion notes)
 Animate router transitions https://www.youtube.com/watch?v=L77Uq93XXzk
@@ -27,10 +26,12 @@ Refactor props
 
 # Maybe
 Create a mixin for fetching data to avoid repetition https://chafikgharbi.com/vuejs-global-function/
+Add dark theme
 
 # Polishing
 
 Clean up CSS classes, especially in AddRecipe
+Figure out how to use postcss with you for autoprefixer
 
 
 

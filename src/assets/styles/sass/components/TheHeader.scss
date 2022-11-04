@@ -3,6 +3,10 @@
 .header {
   background-color: $clr-primary;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  
+  position: sticky;
+  top: 0;
+  z-index: 99;
 }
 
 .navbar {
@@ -11,7 +15,9 @@
   justify-content: space-between;
   align-items: center;
 
-  padding-block: $spacer-s;
+
+
+  padding-block: $spacer-xxs;
 
     &__logo {
       font-family: 'Source Sans 700';
