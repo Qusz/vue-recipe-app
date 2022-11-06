@@ -16,6 +16,7 @@ Add search
 Add infinite scrolling
 Add dynamic page titles for each route
 Refactor props
+Fix invalid prop type in recipe view
 
 # Maybe
 Create a mixin for fetching data to avoid repetition https://chafikgharbi.com/vuejs-global-function/
