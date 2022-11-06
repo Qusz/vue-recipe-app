@@ -1,6 +1,5 @@
 # Styling
 
-Add animation to add/remove ingredient (there's a native Vue wave, look up in Notion notes)
 Animate router transitions https://www.youtube.com/watch?v=L77Uq93XXzk
 Add resposive design
 

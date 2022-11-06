@@ -1,9 +1,13 @@
 <template>
 
   <TheHeader></TheHeader>
-  <TheSidebar></TheSidebar>
+
+
+  
+
 
 </template>
+
 
 
 <script>
@@ -18,3 +22,11 @@ export default {
 }
 
 </script>
+
+<style lang="scss">
+
+
+
+
+
+</style>

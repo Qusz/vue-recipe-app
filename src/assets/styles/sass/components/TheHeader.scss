@@ -49,7 +49,19 @@
 
     }
 
+}
 
 
+//* =================
+//* Router animation 
+//* =================
 
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .2s ease-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }

@@ -1,4 +1,3 @@
-
 <template>
   <header class="header">
     <div class="container">
@@ -24,7 +23,12 @@
       </nav>
     </div>
   </header>
-  <router-view />
+
+  <router-view v-slot="{ Component }">
+    <transition name="fade" mode="out-in">
+      <component :is="Component" />
+    </transition>
+  </router-view>
 
 </template>
 
@@ -41,5 +45,6 @@ export default {
 <style scoped lang="scss">
 
 @import '@/assets/styles/sass/components/TheHeader.scss';
+
 
 </style>

@@ -18,9 +18,10 @@
         </router-link>
       </div>
     </div>
-
   </div>
-  <rotuer-view />
+
+
+
 
 </template>
 
