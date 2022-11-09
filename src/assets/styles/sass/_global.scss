@@ -30,3 +30,17 @@ body::-webkit-scrollbar-thumb {
   background: $clr-secondary;
 }
 
+
+
+//* Spinner
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: $spacer-s;
+
+  max-width: 10rem;
+  margin: $spacer-l auto 0 auto;
+}

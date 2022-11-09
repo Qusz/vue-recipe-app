@@ -1,8 +1,12 @@
 <template>
-
   <div class="container">
     <div v-if="loading" class="loader">
-      <!--! Add spinner here -->
+      <p>Loading ...</p>
+      <spring-spinner
+        :animation-duration="3000"
+        :size="60"
+        color="#FD841F"
+      />
     </div>
     <section v-else class="recipe">
       <h1 class="recipe__title">
@@ -40,10 +44,12 @@
 
 import Server from '@/APIs/ServerAPI.js'
 import BaseButton from '@/components/BaseButton.vue';
+import { SpringSpinner } from 'epic-spinners';
+
 
 export default {
   name: 'RecipeView',
-  components: { BaseButton },
+  components: { BaseButton, SpringSpinner },
   props: {
     id: {
       type: Number

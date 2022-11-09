@@ -17,7 +17,6 @@ Change prop in Button to slot
 
 Add UI alerts for error handling
 Add success message when recipe added
-Add spinners for loading data
 Add 404
 
 # Maybe

@@ -1,8 +1,12 @@
 <template>
-
   <div class="container home">
     <div v-if="loading" class="loader">
-      <!--! Add spinner here -->
+      <p>Loading ...</p>
+      <spring-spinner
+        :animation-duration="3000"
+        :size="60"
+        color="#FD841F"
+      />
     </div>
     <div v-else class="home__cards">
       <div
@@ -22,20 +26,17 @@
       </div>
     </div>
   </div>
-
-
-
-
 </template>
 
 <script>
 
 import RecipeCard from '@/components/RecipeCard.vue';
 import Server from '@/APIs/ServerAPI.js';
+import { SpringSpinner } from 'epic-spinners';
 
 export default {
   name: 'HomeView',
-  components: { RecipeCard },
+  components: { RecipeCard, SpringSpinner },
   created() {
     this.getData();
   },
