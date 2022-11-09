@@ -9,16 +9,14 @@ Add search
 
 # UI
 
-Add UI alerts for error handling
-Add success message when recipe added
-Add 404
-
 # Maybe
 Add dark theme
 
 # Polishing
 
+Add 404
 Clean up CSS classes, especially in AddRecipe
+Fix CSS wrappers
 Add flex and text align center utl classes to avoid css cluttering, espc. in AddRecipe
 Figure out how to use postcss with you for autoprefixer
 Add favicon

@@ -1,30 +1,40 @@
 <template>
   <div class="container home">
-    <div v-if="loading" class="loader">
+    <section v-if="loading" class="loader">
       <p>Loading ...</p>
       <spring-spinner
         :animation-duration="3000"
         :size="60"
         color="#FD841F"
       />
-    </div>
-    <div v-else class="home__cards">
-      <div
-        v-for="item in this.recipes"
-        :key="item.id"
-        class="home__wrapper"
+    </section>
+
+    <section v-else class="home__content">
+      <input
+        v-model="search" 
+        class="home__search" 
+        type="text" 
+        placeholder="Search ..."
       >
-        <router-link
-          :to="{ name: 'RecipeView', params: { id: item.id } }"
+      <div class="home__cards">
+        <div
+          v-for="item in this.filteredData"
+          :key="item.id"
+          class="home__wrapper"
         >
-          <RecipeCard
-            :header="item.name"
-            :content="item.desc"
-            class="home__card">
-          </RecipeCard>
-        </router-link>
+          <router-link
+            :to="{ name: 'RecipeView', params: { id: item.id } }"
+          >
+            <RecipeCard
+              :header="item.name"
+              :content="item.desc"
+              class="home__card">
+            </RecipeCard>
+          </router-link>
+
+        </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
@@ -46,7 +56,15 @@ export default {
     return {
       recipes: null,
       loading: false,
+      search: '',
       toast: useToast()
+    }
+  },
+  computed: {
+    filteredData() {
+      return this.recipes.filter(item => {
+         return item.name.toLowerCase().indexOf(this.search.toLowerCase()) > -1
+      })
     }
   },
   methods: {
@@ -66,7 +84,7 @@ export default {
           showCloseButtonOnHover: false
         });
       }
-    }
+    },
   }
 }
 
