@@ -5,7 +5,6 @@
         <p class="card__content">{{ content }}</p>
       </div>
     </div>
-
 </template>
 
 <script>

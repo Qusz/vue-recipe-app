@@ -30,8 +30,6 @@ body::-webkit-scrollbar-thumb {
   background: $clr-secondary;
 }
 
-
-
 //* Spinner
 
 .loader {
@@ -43,4 +41,6 @@ body::-webkit-scrollbar-thumb {
 
   max-width: 10rem;
   margin: $spacer-l auto 0 auto;
+
+  font-family: 'Inter';
 }

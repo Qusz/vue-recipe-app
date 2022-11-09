@@ -1,18 +1,13 @@
 @use '../base/' as *;
 
 .add-recipe {
-
+  max-width: 50rem;
   margin: $spacer-s auto $spacer-l auto;
   padding: $spacer-s $spacer-m;
   background-color: $clr-primary;
+
   border-radius: 15px;
-  max-width: 50rem;
-
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-
-  display: flex;
-  flex-direction: column;
-  gap: $spacer-m;
 
     textarea,
     input {
@@ -33,56 +28,21 @@
       padding: $spacer-xs $spacer-xxs;
     }
 
-    &__ingredient-name,
-    &__ingredient-qty {
-      padding: .2rem .5rem;
-      text-align: center;
-    }
-
     &__name {
-      text-align: center;
-      align-self: center;
       width: clamp(10rem, 25rem, 100%);
     }
 
-    &__header {
-      align-self: center;
-      font-family: 'Source Sans 700';
-      font-size: $fs-l;
-    }
-
-    &__wrapper {
-      display: flex;
-      flex-direction: column;
-      gap: $spacer-xs;
-    }
-
-    &__wrapper--row {
-      display: flex;
-      flex-direction: row;
-      gap: $spacer-xs;
-    }
-
     &__title {
-      font-family: 'Source Sans 600';
-      font-weight: 600;
-      font-size: $fs-m;
-
       margin: 0;
-      text-align: center;
     }
 
-    &__items {
+    &__ingredient-list {
+      list-style: none;
       padding: 0;
       margin: $spacer-m 0 0 0;
-      list-style: none;
-
-      display: flex;
-      flex-direction: column;
-      gap: $spacer-xs;
     }
     
-    &__item {
+    &__ingredient-item {
       padding: .2rem .5rem;
       background-color: $clr-white;
 
@@ -96,36 +56,42 @@
         }
     }
 
-    &__ingredients {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    &__add-ingredient-name,
+    &__add-ingredient-qty {
+      padding: .2rem .5rem;
     }
 
-    &__ingredient {
-      margin-top: $spacer-s;
-      display: flex;
-      gap: $spacer-xxs;
-    }
-
-    &__ingredient-qty {
+    &__add-ingredient-qty {
       max-width: 60px;
     }
 
-    &__button {
-      align-self: center;
-    }
+
+
+    //* ============
+    //* Typography
+    //* ============
 
     &__name,
     &__description,
-    &__ingredients,
-    &__ingredient,
+    &__add-ingredients,
+    &__add-ingredient,
     &__instructions {
-      
       font-family: 'Inter';
       font-size: $fs-s;
       line-height: 1.5;
     }
+
+    &__title {
+      font-family: 'Source Sans 600';
+      font-weight: 600;
+      font-size: $fs-m;
+    }
+
+    &__header {
+      font-family: 'Source Sans 700';
+      font-size: $fs-l;
+    }
+
 
 
     //* ============================

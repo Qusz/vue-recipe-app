@@ -1,14 +1,16 @@
 <template>
   <div class="container">
-    <div v-if="loading" class="loader">
+
+    <section v-if="loading" class="loader">
       <p>Loading ...</p>
       <spring-spinner
         :animation-duration="3000"
         :size="60"
         color="#FD841F"
       />
-    </div>
-    <section v-else class="recipe">
+    </section>
+    
+    <section v-else class="recipe d-flex flex-col">
       <h1 class="recipe__title">
         {{ this.recipe.name }}
       </h1>
@@ -31,7 +33,7 @@
       </p>
       <BaseButton 
         @click="this.deleteRecipe()"
-        class="btn-m btn-accent recipe__btn-delete"
+        class="btn-m btn-accent mt-m flex-item-align-center"
       >
         Delete recipe
       </BaseButton>
@@ -63,7 +65,6 @@ export default {
       loading: false,
       toast: useToast()
     }
-
   },
   methods: {
     getData() {
@@ -75,12 +76,15 @@ export default {
           this.recipe = data;
           this.loading = false;
         })
-        .catch(error => console.log(error));
+        .catch(error => { throw new Error(error) });
       } catch(error) {
-        console.log(error);
+        this.toast.error(error, {
+          timeout: false, 
+          showCloseButtonOnHover: false
+        });
       }
-
     },
+
     deleteRecipe() {
       try {
         const server = new Server();
@@ -101,7 +105,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-@import '@/assets/styles/sass/views/RecipeView.scss'
-
+  @import '@/assets/styles/sass/views/RecipeView.scss'
 </style>

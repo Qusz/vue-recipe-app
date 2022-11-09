@@ -1,28 +1,27 @@
 <template>
-
   <div class="container">
-    <section class="add-recipe">
-      <h1 class="add-recipe__header">
+    <div class="add-recipe d-flex flex-col g-m">
+      <h1 class="add-recipe__header flex-item-align-center">
         Add a new recipe
       </h1>
 
-      <div class="add-recipe__wrapper">
-        <label for="recipe-name" class="add-recipe__title">
+      <section class="wrapper d-flex flex-col g-xs">
+        <label for="recipe-name" class="add-recipe__title text-center">
           Recipe name
         </label>
         <textarea
           v-model="name"
-          class="add-recipe__name"
+          class="add-recipe__name text-center flex-item-align-center"
           name="recipe-name"
           id="recipe-name"
           cols="20"
           rows="1"
         >
         </textarea>
-      </div>
+      </section>
 
-      <div class="add-recipe__wrapper">
-        <label for="recipe-desc" class="add-recipe__title">
+      <section class="wrapper d-flex flex-col g-s">
+        <label for="recipe-desc" class="add-recipe__title text-center">
           Recipe Description
         </label>
         <textarea
@@ -34,26 +33,24 @@
           rows="6"
         >
         </textarea>
-      </div>
+      </section>
 
-      <div class="add-recipe__wrapper">
-        <h2 class="add-recipe__title">
+      <section class="wrapper d-flex flex-col g-s">
+        <h2 class="add-recipe__title text-center">
           Ingredients
         </h2>
-
-        <div class="add-recipe__ingredients">
-
-          <form class="add-recipe__ingredient">
+        <div class="add-recipe__add-ingredients d-flex flex-col flex-parent-align-center">
+          <form class="add-recipe__add-ingredient mt-s d-flex g-xxs">
             <input
               v-model="ingredientName" 
               type="text" 
-              class="add-recipe__ingredient-name" 
+              class="add-recipe__add-ingredient-name text-center" 
               placeholder="Ingredient"
             >
             <input
               v-model="ingredientQty"
               type="text"
-              class="add-recipe__ingredient-qty"
+              class="add-recipe__add-ingredient-qty text-center"
               placeholder="Qty"
             >
             <BaseButton
@@ -65,19 +62,17 @@
             </BaseButton>
           </form>
 
-
-
           <transition-group 
-            class="add-recipe__items" 
+            class="add-recipe__ingredient-list d-flex flex-col g-xs" 
             tag="ul" 
             name="list"
           >
             <div 
-              class="add-recipe__wrapper--row"
+              class="wrapper d-flex g-xs"
               v-for="(item, i) in ingredients"
               :key="item"
             >
-              <li class="add-recipe__item">
+              <li class="add-recipe__ingredient-item">
                 {{ item.ingredient }}, {{ item.qty }}
               </li>
               <BaseButton
@@ -88,40 +83,11 @@
               </BaseButton>
             </div>
           </transition-group>
-
-          
-
-
-
-
-
-
-
-          <!-- <ul class="add-recipe__items">
-            <div 
-              class="add-recipe__wrapper--row"
-              v-for="(item, i) in ingredients"
-              :key="i"
-            >
-              <li class="add-recipe__item">
-                {{ item.ingredient }}, {{ item.qty }}
-              </li>
-              <BaseButton
-                @click="removeIngredient(i)"
-                :content="'Remove'"
-                class="btn-s btn-secondary"
-              >
-              </BaseButton>
-            </div>
-          </ul> -->
-          
-
- 
         </div>
-      </div>
+      </section>
 
-      <div class="add-recipe__wrapper">
-        <label for="recipe-inst" class="add-recipe__title">
+      <section class="wrapper d-flex flex-col g-s">
+        <label for="recipe-inst" class="add-recipe__title text-center">
           Instructions
         </label>
         <textarea
@@ -133,15 +99,15 @@
           rows="15"
         >
         </textarea>
-      </div>
+      </section>
 
       <BaseButton 
         @click="submitRecipe()"
-        class="btn-m btn-accent add-recipe__button"
+        class="btn-m btn-accent flex-item-align-center"
       >
         Add recipe
       </BaseButton>
-    </section>
+    </div>
   </div>
   
 </template>
@@ -171,6 +137,7 @@ export default {
       this.ingredientName = "";
       this.ingredientQty = null;
     },
+    
     removeIngredient(index) {
       this.ingredients.splice(index, 1)
     },
@@ -201,7 +168,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-@import '@/assets/styles/sass/views/AddRecipe.scss';
-
+  @import '@/assets/styles/sass/views/AddRecipe.scss';
 </style>

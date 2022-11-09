@@ -1,0 +1,70 @@
+@use './vars' as *;
+
+.d-flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-parent-align-center {
+  align-items: center;
+}
+
+.flex-parent-justify-center {
+  justify-content: center;
+}
+
+.flex-item-align-center {
+  align-self: center;
+}
+
+.flex-item-justify-center {
+  justify-self: center;
+}
+
+.flex-xy-center {
+  align-self: center;
+  justify-self: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.g-xxs {
+  gap: $spacer-xxs;
+}
+
+.g-xs {
+  gap: $spacer-xs;
+}
+
+.g-s {
+  gap: $spacer-s;
+}
+
+.g-m {
+  gap: $spacer-m;
+}
+
+.mt-xs {
+  margin-top: $spacer-xs;
+}
+
+.mt-s {
+  margin-top: $spacer-s;
+}
+
+.mt-m {
+  margin-top: $spacer-m;
+}
+
+.mt-l {
+  margin-top: $spacer-l;
+}
+
+.mt-xl {
+  margin-top: $spacer-xl;
+}

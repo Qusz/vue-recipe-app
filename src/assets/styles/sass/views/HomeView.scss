@@ -3,35 +3,11 @@
 .home {
   margin-block: $spacer-m;
 
-  display: flex;
-  flex-direction: column;
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-  }
-
   &__cards {
-    margin-top: $spacer-s;
-    
     display: grid;
     justify-items: stretch;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: $spacer-xs;
-  }
-
-  &__wrapper {
-
-    a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  }
-
-  &__add-button {
-    align-self: flex-end;
-    margin-top: $spacer-s;
   }
 
   &__search {

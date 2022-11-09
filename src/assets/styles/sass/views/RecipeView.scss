@@ -10,8 +10,17 @@
 
   max-width: 800px;
 
-  display: flex;
-  flex-direction: column;
+    &__ingredients {
+      padding-block: $spacer-s;
+      margin: $spacer-xs 0 $spacer-m 0;
+      border-block: 2px solid $clr-black;
+    }
+
+
+
+    //* ==================
+    //* Typography
+    //* ==================
 
     &__title {
       font-family: 'Source Sans 700';
@@ -31,16 +40,5 @@
       font-size: $fs-s;
       line-height: 1.5;
       font-weight: 400;
-    }
-
-    &__ingredients {
-      padding-block: $spacer-s;
-      margin: $spacer-xs 0 $spacer-m 0 ;
-      border-block: 2px solid $clr-black;
-    }
-
-    &__btn-delete {
-      align-self: center;
-      margin-top: $spacer-m;
     }
 }
