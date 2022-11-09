@@ -2,9 +2,6 @@
   <header class="header">
     <div class="container">
       <nav class="navbar">
-        <router-link :to="{ name: 'TestView'}" class="navbar__logo">
-          Test
-        </router-link>
         <router-link :to="{ name: 'HomeView'}" class="navbar__logo">
           Recipe Book
         </router-link>
