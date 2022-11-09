@@ -10,24 +10,24 @@
     </div>
     <section v-else class="recipe">
       <h1 class="recipe__title">
-        {{ this.recipes.name }}
+        {{ this.recipe.name }}
       </h1>
       <p class="recipe__description">
-        {{ this.recipes.desc }}
+        {{ this.recipe.desc }}
       </p>
       <h2 class="recipe__ingredients-tile">
         Ingredients
       </h2>
       <ul class="recipe__ingredients">
         <li
-          v-for="item in this.recipes.ingredients"
+          v-for="item in this.recipe.ingredients"
           :key="item.id" 
           class="recipe__ingredient">
           {{ item.ingredient }}, {{ item.qty }}
         </li>
       </ul>
       <p class="recipe__instructions">
-        {{ this.recipes.instructions }}
+        {{ this.recipe.instructions }}
       </p>
       <BaseButton 
         @click="this.deleteRecipe()"
@@ -60,7 +60,7 @@ export default {
   },
   data() {
     return {
-      recipes: null,
+      recipe: null,
       loading: false
     }
 
@@ -70,10 +70,9 @@ export default {
       try {
         const server = new Server();
         this.loading = true;
-        server.fetchRecipes()
+        server.fetchRecipe(this.id)
         .then(data => {
-          // Change this
-          this.recipes = data[this.id];
+          this.recipe = data;
           this.loading = false;
         })
         .catch(error => console.log(error));

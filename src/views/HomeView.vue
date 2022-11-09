@@ -10,12 +10,12 @@
     </div>
     <div v-else class="home__cards">
       <div
-        v-for="(item, i) in this.recipes"
+        v-for="item in this.recipes"
         :key="item.id"
         class="home__wrapper"
       >
         <router-link
-          :to="{ name: 'RecipeView', params: { id: i } }"
+          :to="{ name: 'RecipeView', params: { id: item.id } }"
         >
           <RecipeCard
             :header="item.name"

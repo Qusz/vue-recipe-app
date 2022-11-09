@@ -5,9 +5,6 @@ Add resposive design
 
 # Logic
 
-!!! Can't delete some recipes for some reason. Something wrong with the router or json server and dynamic links
-
-Change fetchData method in recipeview
 Add search
 Refactor props
 Fix invalid prop type in recipe view

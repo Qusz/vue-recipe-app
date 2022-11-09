@@ -13,6 +13,16 @@ export default class Server {
     }
   }
 
+  async fetchRecipe(id) {
+    try {
+      const request = await fetch(`${this.address}/${id}`);
+      const response = await request.json()
+      return response;
+    } catch(error) {
+      throw new Error(`ERROR. Cannot access the database. ${error}`);
+    }
+  }
+
   async addRecipe(data) {
     try {
       const response = await fetch(this.address, {
