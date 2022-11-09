@@ -43,13 +43,12 @@
 <script>
 
 import Server from '@/APIs/ServerAPI.js'
-import BaseButton from '@/components/BaseButton.vue';
 import { SpringSpinner } from 'epic-spinners';
 import { useToast } from 'vue-toastification';
 
 export default {
   name: 'RecipeView',
-  components: { BaseButton, SpringSpinner },
+  components: { SpringSpinner },
   props: {
     id: {
       type: Number

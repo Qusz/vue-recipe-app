@@ -149,12 +149,10 @@
 <script>
 
 import Server from '@/APIs/ServerAPI.js'
-import BaseButton from '@/components/BaseButton.vue';
 import { useToast } from 'vue-toastification';
 
 export default {
   name: 'AddRecipe',
-  components: {BaseButton},
   data() {
     return {
       name: "",

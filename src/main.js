@@ -1,6 +1,7 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
+import BaseButton from '@/components/BaseButton.vue';
 import Toast from "vue-toastification";
 
 import "vue-toastification/dist/index.css";
@@ -22,6 +23,7 @@ const toastOptions = {
 }
 
 createApp(App)
+.component('BaseButton', BaseButton)
 .use(router)
 .use(Toast, toastOptions)
 .mount('#app')

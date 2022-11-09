@@ -5,8 +5,6 @@ Add resposive design
 
 # Logic
 
-Add search
-
 # UI
 
 # Maybe
