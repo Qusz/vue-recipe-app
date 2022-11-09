@@ -1,7 +1,10 @@
 <template>
 
   <div class="container home">
-    <div class="home__cards">
+    <div v-if="loading" class="loader">
+      <!--! Add spinner here -->
+    </div>
+    <div v-else class="home__cards">
       <div
         v-for="(item, i) in this.recipes"
         :key="item.id"
@@ -38,17 +41,19 @@ export default {
   },
   data() {
     return {
-      recipes: null
+      recipes: null,
+      loading: false
     }
-
   },
   methods: {
     getData() {
       try {
         const server = new Server();
+        this.loading = true;
         server.fetchRecipes()
           .then(data => {
             this.recipes = data;
+            this.loading = false;
           })
           .catch(error => console.log(error));
       } catch(error) {
