@@ -11,7 +11,10 @@
 <script>
 
 export default {
-  props: ['header', 'content']
+  props: {
+    header: String,
+    content: String
+  }
 }
 
 </script>
