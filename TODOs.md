@@ -1,6 +1,5 @@
 # Styling
 
-Animate router transitions https://www.youtube.com/watch?v=L77Uq93XXzk
 Add resposive design
 
 
@@ -9,14 +8,17 @@ Add resposive design
 !!! Can't delete some recipes for some reason. Something wrong with the router or json server and dynamic links
 
 Change fetchData method in recipeview
-Add error handling for fetch requests
-Add spinners for loading data
-Add 404
 Add search
-Add infinite scrolling
-Add dynamic page titles for each route
 Refactor props
 Fix invalid prop type in recipe view
+Change prop in Button to slot
+
+# UI
+
+Add UI alerts for error handling
+Add success message when recipe added
+Add spinners for loading data
+Add 404
 
 # Maybe
 Create a mixin for fetching data to avoid repetition https://chafikgharbi.com/vuejs-global-function/
@@ -29,6 +31,13 @@ Add flex and text align center utl classes to avoid css cluttering, espc. in Add
 Figure out how to use postcss with you for autoprefixer
 Add favicon
 Look up how to register components globally (need to make the button global)
+Add dynamic page titles for each route
+
+
+# Later
+
+Add infinite scrolling
+
 
 
 

@@ -176,17 +176,21 @@ export default {
     },
 
     submitRecipe() {
-      const server = new Server();
-      server.addRecipe({
-        id: "",
-        name: this.name,
-        desc: this.description,
-        ingredients: this.ingredients,
-        instructions: this.instructions
-      }).
-        then(this.$router.push('/'));        
+      try {
+        const server = new Server();
+        server.addRecipe({
+          id: "",
+          name: this.name,
+          desc: this.description,
+          ingredients: this.ingredients,
+          instructions: this.instructions
+        })
+          .then(this.$router.push('/'))
+          .catch(error => console.log(error));
+      } catch(error) {
+        console.log(error)
+      }
     }
-
   }
 }
 

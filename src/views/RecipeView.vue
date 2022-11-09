@@ -61,21 +61,31 @@ export default {
   },
   methods: {
     getData() {
-      const server = new Server();
-      this.loading = true;
-      server.fetchRecipes().
-        then(data => {
+      try {
+        const server = new Server();
+        this.loading = true;
+        server.fetchRecipes()
+        .then(data => {
           // Change this
           this.recipes = data[this.id];
           this.loading = false;
-        });
+        })
+        .catch(error => console.log(error));
+      } catch(error) {
+        console.log(error);
+      }
+
     },
     deleteRecipe() {
-      const server = new Server();
-      server.removeRecipe(this.id).
-        then(this.$router.push('/'));        
+      try {
+        const server = new Server();
+        server.removeRecipe(this.id)
+          .then(this.$router.push('/'))
+          .catch(error => console.log(error));    
+      } catch(error) {
+        console.log(error);
+      }
     }
-
   }
 }
 

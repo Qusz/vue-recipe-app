@@ -44,11 +44,16 @@ export default {
   },
   methods: {
     getData() {
-      const server = new Server();
-      server.fetchRecipes().
-        then(data => {
-          this.recipes = data;
-        });
+      try {
+        const server = new Server();
+        server.fetchRecipes()
+          .then(data => {
+            this.recipes = data;
+          })
+          .catch(error => console.log(error));
+      } catch(error) {
+        console.log(error);
+      }
     }
   }
 }
