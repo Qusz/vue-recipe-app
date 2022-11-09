@@ -45,7 +45,7 @@
 import Server from '@/APIs/ServerAPI.js'
 import BaseButton from '@/components/BaseButton.vue';
 import { SpringSpinner } from 'epic-spinners';
-
+import { useToast } from 'vue-toastification';
 
 export default {
   name: 'RecipeView',
@@ -61,7 +61,8 @@ export default {
   data() {
     return {
       recipe: null,
-      loading: false
+      loading: false,
+      toast: useToast()
     }
 
   },
@@ -86,9 +87,13 @@ export default {
         const server = new Server();
         server.removeRecipe(this.id)
           .then(this.$router.push('/'))
-          .catch(error => console.log(error));    
+          .then(this.toast.success("Recipe removed!"))
+          .catch(error => { throw new Error(error) });    
       } catch(error) {
-        console.log(error);
+        this.toast.error(error, {
+          timeout: false, 
+          showCloseButtonOnHover: false
+        });
       }
     }
   }

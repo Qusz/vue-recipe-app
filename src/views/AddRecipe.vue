@@ -150,6 +150,7 @@
 
 import Server from '@/APIs/ServerAPI.js'
 import BaseButton from '@/components/BaseButton.vue';
+import { useToast } from 'vue-toastification';
 
 export default {
   name: 'AddRecipe',
@@ -162,6 +163,7 @@ export default {
       ingredientQty: null,
       ingredients: [],
       instructions: "",
+      toast: useToast()
     }
   },
   methods: {
@@ -186,9 +188,13 @@ export default {
           instructions: this.instructions
         })
           .then(this.$router.push('/'))
-          .catch(error => console.log(error));
+          .then(this.toast.success("Recipe added!"))
+          .catch(error => { throw new Error(error) });
       } catch(error) {
-        console.log(error)
+        this.toast.error(error, {
+          timeout: false, 
+          showCloseButtonOnHover: false
+        });
       }
     }
   }

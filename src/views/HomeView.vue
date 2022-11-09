@@ -33,6 +33,8 @@
 import RecipeCard from '@/components/RecipeCard.vue';
 import Server from '@/APIs/ServerAPI.js';
 import { SpringSpinner } from 'epic-spinners';
+import { useToast } from 'vue-toastification';
+
 
 export default {
   name: 'HomeView',
@@ -43,7 +45,8 @@ export default {
   data() {
     return {
       recipes: null,
-      loading: false
+      loading: false,
+      toast: useToast()
     }
   },
   methods: {
@@ -56,9 +59,12 @@ export default {
             this.recipes = data;
             this.loading = false;
           })
-          .catch(error => console.log(error));
+          .catch(error => { throw new Error(error) });
       } catch(error) {
-        console.log(error);
+        this.toast.error(error, {
+          timeout: false, 
+          showCloseButtonOnHover: false
+        });
       }
     }
   }
