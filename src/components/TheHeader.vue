@@ -13,9 +13,9 @@
           <li class="navbar__item navbar__add-button">
             <router-link :to="{ name: 'AddRecipe'}">
               <BaseButton
-                :content="'Add New Recipe'"
                 class="btn-m btn-secondary"
               >
+                Add New Recipe
               </BaseButton>
             </router-link>
           </li>

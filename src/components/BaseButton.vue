@@ -1,16 +1,8 @@
 <template>
   <button class="btn-m">
-    {{ content }}
+    <slot></slot>
   </button>
 </template>
-
-<script>
-
-export default {
-  props: ['content']
-}
-
-</script>
 
 <style lang="scss" scroped>
 

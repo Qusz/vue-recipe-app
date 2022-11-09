@@ -6,9 +6,6 @@ Add resposive design
 # Logic
 
 Add search
-Refactor props
-Fix invalid prop type in recipe view
-Change prop in Button to slot
 
 # UI
 
@@ -17,7 +14,6 @@ Add success message when recipe added
 Add 404
 
 # Maybe
-Create a mixin for fetching data to avoid repetition https://chafikgharbi.com/vuejs-global-function/
 Add dark theme
 
 # Polishing

@@ -31,9 +31,9 @@
       </p>
       <BaseButton 
         @click="this.deleteRecipe()"
-        :content="'Delete recipe'"
         class="btn-m btn-accent recipe__btn-delete"
       >
+        Delete recipe
       </BaseButton>
     </section>
   </div>

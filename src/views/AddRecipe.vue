@@ -58,10 +58,10 @@
             >
             <BaseButton
               @click.prevent="addIngredient()"
-              :content="'+'"
               type="submit"
               class="btn-s btn-secondary"
             >
+              +
             </BaseButton>
           </form>
 
@@ -82,9 +82,9 @@
               </li>
               <BaseButton
                 @click="removeIngredient(i)"
-                :content="'Remove'"
                 class="btn-s btn-secondary"
               >
+                Remove
               </BaseButton>
             </div>
           </transition-group>
@@ -137,9 +137,9 @@
 
       <BaseButton 
         @click="submitRecipe()"
-        :content="'Add recipe'"
         class="btn-m btn-accent add-recipe__button"
       >
+        Add recipe
       </BaseButton>
     </section>
   </div>
