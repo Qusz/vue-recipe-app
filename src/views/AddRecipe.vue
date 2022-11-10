@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="add-recipe d-flex flex-col g-m">
-      <h1 class="add-recipe__header flex-item-align-center">
+      <h1 class="add-recipe__header text-center">
         Add a new recipe
       </h1>
 
@@ -56,7 +56,7 @@
             <BaseButton
               @click.prevent="addIngredient()"
               type="submit"
-              class="btn-s btn-secondary"
+              class="btn-s btn-secondary add-recipe__add-button"
             >
               +
             </BaseButton>
