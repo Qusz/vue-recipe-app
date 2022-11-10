@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import RecipeView from '@/views/RecipeView.vue'
 import AddRecipe from '@/views/AddRecipe.vue'
+import NotFound from '@/views/NotFound.vue'
 
 const routes = [
   {
@@ -31,6 +32,14 @@ const routes = [
     component: AddRecipe,
     meta: {
       title: 'MyRecipes | Add Recipe'
+    }
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'NotFound',
+    component: NotFound,
+    meta: {
+      title: 'MyRecipes | Page Not Found'
     }
   }
 ]

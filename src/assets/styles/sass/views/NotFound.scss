@@ -1,0 +1,16 @@
+@use '../base/' as *;
+
+.not-found {
+  &__title {
+    font-family: 'Source Sans 700';
+    font-size: $fs-xl;
+    color: $clr-secondary;
+  }
+
+  &__message {
+    font-family: 'Inter';
+    font-size: $fs-m;
+    font-weight: 500;
+    color: $clr-secondary;
+  }
+}
