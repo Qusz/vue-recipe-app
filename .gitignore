@@ -2,6 +2,7 @@
 node_modules
 /dist
 
+TODOs.md
 
 # local env files
 .env.local
