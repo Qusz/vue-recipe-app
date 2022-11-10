@@ -11,7 +11,7 @@
         </div>
 
         <router-link :to="{ name: 'HomeView'}" class="navbar__logo">
-          Recipe Book
+          MyRecipes
         </router-link>
 
         <ul v-show="!mobile" class="navbar__items">

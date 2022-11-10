@@ -13,6 +13,17 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import "vue-toastification/dist/index.css";
 import './assets/styles/sass/styles.scss';
 
+
+
+//* Router dynamic titles
+router.beforeEach((to, from, next) => {
+  if (to.meta.title) {
+    document.title = to.meta.title || 'MyRecipes';
+  }
+  next();
+});
+
+//* Toast default options
 const toastOptions = {
   position: "top-center",
   timeout: 5000,
@@ -28,7 +39,8 @@ const toastOptions = {
   rtl: false
 }
 
-library.add(faBars)
+//* Font Awesome 
+library.add(faBars);
 
 createApp(App)
 .component('BaseButton', BaseButton)
