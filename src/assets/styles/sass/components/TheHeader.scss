@@ -46,6 +46,58 @@
     &__add-button {
       font-size: $fs-s;
     }
+
+    &__hamburger {
+      order: 1;
+      cursor: pointer;
+      color: $clr-secondary;
+
+      font-size: 1.5rem;
+
+        &:hover {
+          color: $clr-accent;
+        }
+
+        .icon {
+          transition: all .3s ease;
+        }
+
+        .icon-active {
+          transform: rotate(180deg);
+        }
+    }
+
+    &__dropdown-menu {
+      margin: 0;
+      padding: $spacer-s $spacer-xs;
+      list-style: none;
+
+      display: flex;
+      flex-direction: column;
+      gap: $spacer-s;
+
+      position: fixed;
+      width: 100%;
+      max-width: 230px;
+      height: 100vh;
+      top: 0;
+      left: 0;
+
+      background-color: $clr-primary;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+
+    &__dropdown-item {
+      font-family: 'Source Sans 600';
+      font-size: $fs-m;
+      color: $clr-secondary;
+
+      transition: all .3s ease;
+
+        &:hover {
+          color: $clr-accent;
+        }
+    }
 }
 
 
@@ -62,4 +114,24 @@
 .scale-leave-to {
   opacity: 0;
   transform: scale(0.9);
+}
+
+
+//* ======================
+//* Mobile nav animation 
+//* ======================
+
+.mobile-nav-enter-active,
+.mobile-nav-leave-active {
+  transition: .5s ease all;
+}
+
+.mobile-nav-enter-from,
+.mobile-nav-leave-to {
+  // Extra 30px because of padding
+  transform: translateX(-260px);
+}
+
+.mobile-nav-enter-to {
+  transform: translateX(0);
 }
