@@ -1,7 +1,7 @@
 # vue-recipes-app
 
 ## Introduction
-This is a recipe book app I built to practice the basics of Vue and building a SPA. 
+This is a recipe book app I built to practice the basics of Vue, Vue Router and building a SPA. 
 
 ## Features 
 - User can add a new recipe
