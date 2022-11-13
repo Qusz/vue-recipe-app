@@ -3,6 +3,9 @@
 ## Introduction
 This is a recipe book app I built to practice the basics of Vue, Vue Router and building a SPA. 
 
+## Live demo
+https://vue-recipe-app-demo.vercel.app/
+
 ## Features 
 - User can add a new recipe
 - User can see all added recipes as mini cards
