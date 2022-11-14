@@ -56,7 +56,7 @@
             <BaseButton
               @click.prevent="addIngredient()"
               type="submit"
-              class="btn-s btn-secondary add-recipe__add-button"
+              class="btn-s btn-accent add-recipe__add-button"
             >
               +
             </BaseButton>
@@ -77,7 +77,7 @@
               </li>
               <BaseButton
                 @click="removeIngredient(i)"
-                class="btn-s btn-secondary"
+                class="btn-s btn-accent"
               >
                 Remove
               </BaseButton>
