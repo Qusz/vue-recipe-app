@@ -41,6 +41,7 @@
 
 .btn-accent {
   @include btn-color($clr-accent, $clr-black);
+  color: $clr-white;
 }
 
 .btn-secondary {

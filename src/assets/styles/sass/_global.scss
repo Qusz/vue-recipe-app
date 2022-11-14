@@ -19,7 +19,7 @@ a {
 
 * {
   scrollbar-width: thin;         
-  scrollbar-color: $clr-secondary $clr-primary;   
+  scrollbar-color: $clr-accent $clr-primary;   
 }
 
 //* Scrollbar Webkit
@@ -33,7 +33,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: $clr-secondary;
+  background: $clr-accent;
 }
 
 

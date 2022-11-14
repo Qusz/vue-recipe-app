@@ -23,7 +23,7 @@
           <li class="navbar__item navbar__add-button">
             <router-link :to="{ name: 'AddRecipe'}">
               <BaseButton
-                class="btn-m btn-secondary"
+                class="btn-m btn-accent"
               >
                 Add New Recipe
               </BaseButton>
