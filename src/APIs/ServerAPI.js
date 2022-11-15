@@ -1,6 +1,6 @@
 export default class Server {
   constructor() {
-    this.address = 'https://my-json-server.typicode.com/Qusz/vue-recipe-app/recipes'
+    this.address = 'http://localhost:3000/recipes';
   }
 
   async fetchRecipes() {
