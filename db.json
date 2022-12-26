@@ -2,163 +2,355 @@
   "recipes": [
     {
       "id": 1,
-      "name": "Lorem 1",
-      "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.",
+      "name": "Saucy Sriracha Franks",
+      "desc": "A little heat, a little sweet, and a little Asian. Serve with toothpicks, and you have a one-bite appetizer that is so very simple to make.",
       "ingredients": [
         {
-          "ingredient": "Lorem",
-          "qty": "3"
+          "ingredient": "ketchup",
+          "qty": "1 cup"
         },
         {
-          "ingredient": "Lorem",
-          "qty": "3"
+          "ingredient": "soy sauce",
+          "qty": "¼ cup "
         },
         {
-          "ingredient": "Lorem",
-          "qty": "3"
+          "ingredient": "rice vinegar",
+          "qty": "¼ cup"
+        },
+        {
+          "ingredient": "sriracha sauce",
+          "qty": "3 tablespoons"
+        },
+        {
+          "ingredient": "brown sugar",
+          "qty": "1 tablespoon"
+        },
+        {
+          "ingredient": "sesame oil",
+          "qty": "1 teaspoon"
+        },
+        {
+          "ingredient": "grated ginger root",
+          "qty": "1 teaspoon"
+        },
+        {
+          "ingredient": "garlic, crushed",
+          "qty": "1 clove"
+        },
+        {
+          "ingredient": "all-beef franks, cut into 1-inch slices",
+          "qty": "1 (12 ounce) package"
         }
       ],
-      "instructions": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec."
+      "instructions": "Mix ketchup, soy sauce, vinegar, sriracha, brown sugar, sesame oil, ginger, and garlic in a saucepan and bring to a simmer over low heat. Add franks and heat until warm, about 5 minutes. Serve with toothpicks."
     },
     {
       "id": 12,
-      "name": "Lorem 14",
-      "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes",
+      "name": "Best Ever Muffins",
+      "desc": "These basic muffins can be made as-is, or you can add one of several different ingredients for a variety of muffins. All options are delicious!",
       "ingredients": [
         {
-          "ingredient": "Lorem",
-          "qty": "3"
+          "ingredient": "all-purpose flour",
+          "qty": "2 cups"
         },
         {
-          "ingredient": "Lorem",
-          "qty": "3"
+          "ingredient": "baking powder",
+          "qty": "3 teaspoons"
         },
         {
-          "ingredient": "Lorem",
-          "qty": "3"
+          "ingredient": "salt",
+          "qty": "½ teaspoon"
+        },
+        {
+          "ingredient": "white sugar",
+          "qty": "¾ cup"
+        },
+        {
+          "ingredient": "egg",
+          "qty": "1"
+        },
+        {
+          "ingredient": "milk",
+          "qty": "1 cup"
+        },
+        {
+          "ingredient": "vegetable oil",
+          "qty": "3¼ cup "
         }
       ],
-      "instructions": "In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui."
+      "instructions": "Preheat the oven to 400 degrees F (200 degrees C). Grease a 12-cup muffin tin or line cups with paper liners. Stir flour, baking powder, salt, and sugar together in a large bowl; make a well in the center. Beat egg with a fork in a small bowl or 2-cup measuring cup; whisk in milk and oil. Pour egg mixture all at once into flour mixture; mix quickly and lightly with a fork until just moistened. The batter will be lumpy. (Fold in additional ingredients if using; see variations below). Spoon batter into the prepared muffin cups, filling each 3/4 full. Bake in the preheated oven until tops spring back when lightly pressed, about 25 minutes."
     },
     {
       "id": 13,
-      "name": "Lorem 30",
-      "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget.",
+      "name": "Pesto Pasta with Chicken",
+      "desc": "This chicken pesto pasta is easy and delicious. Serve with crusty bread and salad for a quick dinner. Use as much or as little pesto sauce as you like. Using homemade pesto will taste even better, but it adds to prep time. Enjoy!",
       "ingredients": [
         {
-          "ingredient": "Lorem",
-          "qty": "3"
+          "ingredient": "bow tie pasta",
+          "qty": "1 (16 ounce) package"
         },
         {
-          "ingredient": "Lorem",
-          "qty": "3"
+          "ingredient": "olive oil",
+          "qty": "1 teaspoon"
         },
         {
-          "ingredient": "Lorem",
-          "qty": "3"
+          "ingredient": "garlic",
+          "qty": "2 cloves"
+        },
+        {
+          "ingredient": "boneless chicken breasts, cut into bite-sized pieces",
+          "qty": "2 pcs"
+        },
+        {
+          "ingredient": "crushed red pepper flakes, or to taste",
+          "qty": "1 pinch"
+        },
+        {
+          "ingredient": "pesto sauce",
+          "qty": "½ cup"
+        },
+        {
+          "ingredient": "oil-packed sun-dried tomatoes, drained and cut into strips",
+          "qty": "⅓ cup"
         }
       ],
-      "instructions": ""
+      "instructions": "Bring a large pot of lightly salted water to a boil. Add pasta and cook until al dente, 8 to 10 minutes; drain. Heat oil in a large skillet over medium heat. Sauté garlic until tender, then stir in chicken and season with red pepper flakes. Cook until chicken is golden and cooked through. Combine pasta, chicken, pesto, and sun-dried tomatoes in a large bowl; toss to coat evenly."
     },
     {
       "id": 14,
-      "name": "Lorem 22",
-      "desc": "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.",
+      "name": "Stuffed Green Peppers",
+      "desc": "Delicious stuffed green peppers that are easy to make. Each green bell pepper contains ground beef, onion, tomatoes, rice, and cheese, and is cooked in tomato soup.",
       "ingredients": [
         {
-          "ingredient": "Lorem",
-          "qty": "3"
+          "ingredient": "green bell peppers",
+          "qty": "6"
         },
         {
-          "ingredient": "Lorem",
-          "qty": "3"
+          "ingredient": "salt",
+          "qty": "to taste"
         },
         {
-          "ingredient": "Lorem",
-          "qty": "3"
+          "ingredient": "ground beef",
+          "qty": "1 pound"
+        },
+        {
+          "ingredient": "chopped onion",
+          "qty": "⅓ cup"
+        },
+        {
+          "ingredient": "canned whole peeled tomatoes, chopped",
+          "qty": "1 (14.5 ounce)"
+        },
+        {
+          "ingredient": "water",
+          "qty": "½ cup"
+        },
+        {
+          "ingredient": "uncooked rice",
+          "qty": "½ cup"
+        },
+        {
+          "ingredient": "Worcestershire sauce",
+          "qty": "1 teaspoon"
+        },
+        {
+          "ingredient": "Cheddar cheese",
+          "qty": "1 cup"
+        },
+        {
+          "ingredient": "canned condensed tomato soup",
+          "qty": "2 (10.75 ounce)"
         }
       ],
-      "instructions": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi."
+      "instructions": "Bring a large pot of salted water to a boil. Cut the tops off bell peppers and remove the seeds. Cook bell peppers in boiling water for 5 minutes; drain. Sprinkle salt inside each bell pepper and set aside. Place ground beef and onion in a large skillet over medium heat; cook and stir until beef is browned, about 5 minutes. Drain off excess fat and season with salt and pepper. Stir in tomatoes, 1/2 cup water, rice, and Worcestershire sauce; reduce heat to low, cover, and simmer until rice is tender, about 15 minutes. Remove from heat and stir in cheese. Preheat the oven to 350 degrees F (175 degrees C). Stuff each bell pepper with beef and rice mixture; arrange open-side up in a baking dish. Combine tomato soup with just enough water in a medium bowl to make the soup a gravy consistency; pour over the bell peppers and cover with aluminum foil. Bake in the preheated oven until heated through and cheese is melted and bubbly, about 25 to 30 minutes."
     },
     {
       "id": 101,
-      "name": "Lorem 1",
-      "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.",
+      "name": "Broccoli and Chicken Stir-Fry",
+      "desc": "A chicken and broccoli recipe to make at home. Serve with rice.",
       "ingredients": [
         {
-          "ingredient": "Lorem",
-          "qty": "3"
+          "ingredient": "soy sauce",
+          "qty": "⅔ cup"
         },
         {
-          "ingredient": "Lorem",
-          "qty": "3"
+          "ingredient": "brown sugar",
+          "qty": "¼ cup"
         },
         {
-          "ingredient": "Lorem",
-          "qty": "3"
+          "ingredient": "ground ginger",
+          "qty": "½ teaspoon"
+        },
+        {
+          "ingredient": "red pepper flakes, or to taste",
+          "qty": "1 pinch"
+        },
+        {
+          "ingredient": "water",
+          "qty": "2 tablespoons"
+        },
+        {
+          "ingredient": "cornstarch",
+          "qty": "2 tablespoons"
+        },
+        {
+          "ingredient": "vegetable oil, or to taste",
+          "qty": "2 teaspoons"
+        },
+        {
+          "ingredient": "skinless, boneless chicken breast halves, cut into chunks",
+          "qty": "3 pcs"
+        },
+        {
+          "ingredient": "onion, sliced",
+          "qty": "1"
+        },
+        {
+          "ingredient": "broccoli florets",
+          "qty": "3 cups"
         }
       ],
-      "instructions": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes"
+      "instructions": "Stir soy sauce, brown sugar, ginger, and red pepper flakes together in a bowl to dissolve sugar into the liquid. Mix water and cornstarch together in a small bowl; stir with a whisk until cornstarch dissolves completely. Heat oil in a large skillet over high heat. Fry chicken and onion in hot oil until the chicken is no longer pink in the center and the onion is tender, 5 to 7 minutes. Stir in broccoli with chicken and onion; sauté until broccoli is hot, about 5 minutes. Push the chicken and vegetable mixture to the side of the skillet. Pour the soy sauce mixture into the vacant part of the skillet. Stir the cornstarch slurry into the soy sauce mixture until the color is consistent. Move the chicken and vegetables back into the center of the pan; sauté until the sauce thickens and coats the chicken and vegetables, about 5 minutes more."
     },
     {
       "id": 102,
-      "name": "Lorem 3",
-      "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+      "name": "Homemade Banana Pudding",
+      "desc": "This homemade banana pudding recipe from scratch was handed down from my grandmother. My whole family loves it and we all grew up on it. Hope you enjoy it!",
       "ingredients": [
         {
-          "ingredient": "Lorem",
-          "qty": "3"
+          "ingredient": "white sugar",
+          "qty": "⅔ cup"
         },
         {
-          "ingredient": "Lorem",
-          "qty": "3"
+          "ingredient": "all-purpose flour",
+          "qty": "⅓ cup"
         },
         {
-          "ingredient": "Lorem",
-          "qty": "3"
+          "ingredient": "salt",
+          "qty": "¼ teaspoon"
+        },
+        {
+          "ingredient": "eggs, beaten",
+          "qty": "3 pcs"
+        },
+        {
+          "ingredient": "milk",
+          "qty": "2 cups"
+        },
+        {
+          "ingredient": "butter, softened",
+          "qty": "2 tablespoons"
+        },
+        {
+          "ingredient": "vanilla extract",
+          "qty": "½ teaspoon"
+        },
+        {
+          "ingredient": "bananas, peeled and sliced",
+          "qty": "2 pcs"
+        },
+        {
+          "ingredient": "vanilla wafer cookies",
+          "qty": "½ (12 ounce) package"
         }
       ],
-      "instructions": "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim."
+      "instructions": "Combine sugar, flour, and salt together in a medium saucepan. Add eggs and stir well. Stir in milk, and cook over low heat, stirring constantly. When the mixture has thickened enough to coat the back of a metal spoon, remove from heat and continue to stir, cooling slightly. Stir in butter and vanilla until smooth. Layer pudding with bananas and vanilla wafers in a serving dish. Chill at least 1 hour in the refrigerator before serving."
     },
     {
       "id": 116,
-      "name": "Lorem 2",
-      "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.",
+      "name": "Roasted Garlic-Parmesan Fingerling Potatoes",
+      "desc": "This roasted fingerling potato recipe is simple and perfect. Fingerlings have a natural hint of sweetness that makes them a nice alternative to other potatoes. They pair well with almost anything, from grilled steak to chicken marsala. The Parmesan cheese and garlic brown up in the oven for crunchy bits of flavor.",
       "ingredients": [
         {
-          "ingredient": "Lorem",
-          "qty": "3"
+          "ingredient": "fingerling potatoes, halved lengthwise",
+          "qty": "1 pound "
         },
         {
-          "ingredient": "Lorem",
-          "qty": "3"
+          "ingredient": "garlic, minced",
+          "qty": "2 cloves"
         },
         {
-          "ingredient": "Lorem",
-          "qty": "3"
+          "ingredient": "grated Parmesan cheese",
+          "qty": "2 tablespoons"
+        },
+        {
+          "ingredient": "lemon zest",
+          "qty": "1 teaspoon"
+        },
+        {
+          "ingredient": "salt",
+          "qty": "½ teaspoon"
+        },
+        {
+          "ingredient": "freshly ground black pepper",
+          "qty": "¼ teaspoon"
+        },
+        {
+          "ingredient": "olive oil",
+          "qty": "2 tablespoons"
+        },
+        {
+          "ingredient": "butter",
+          "qty": "1 tablespoon"
+        },
+        {
+          "ingredient": "chopped fresh parsley",
+          "qty": "2 tablespoons"
         }
       ],
-      "instructions": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu."
+      "instructions": "Preheat the oven to 425 degrees F (220 degrees C). Toss potatoes, garlic, Parmesan cheese, lemon zest, salt, and black pepper together in a bowl. Drizzle with olive oil and toss again until evenly combined. Heat a cast-iron skillet over medium-high heat. Add butter and heat until melted. Add potatoes; cook and toss until evenly coated with butter, about 2 minutes. Move the skillet to the preheated oven. Roast in the preheated oven until soft, 15 to 20 minutes, tossing halfway through. Remove from oven and top with parsley."
     },
     {
       "id": 123,
-      "name": "Lorem 14",
-      "desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes",
+      "name": "Easy Broccoli and Ham Quiche",
+      "desc": "This ham and broccoli quiche has great flavor and can be served for breakfast, lunch, or dinner. It tastes just as great the next day for leftovers. Use your favorite cheese.",
       "ingredients": [
         {
-          "ingredient": "Lorem",
-          "qty": "3"
+          "ingredient": "package frozen broccoli florets",
+          "qty": "1 (10 ounce)"
         },
         {
-          "ingredient": "Lorem",
-          "qty": "3"
+          "ingredient": "butter",
+          "qty": "2 tablespoons"
         },
         {
-          "ingredient": "Lorem",
-          "qty": "3"
+          "ingredient": "onion, minced",
+          "qty": "1 pcs"
+        },
+        {
+          "ingredient": "garlic, minced",
+          "qty": "1 teaspoon"
+        },
+        {
+          "ingredient": "diced cooked ham",
+          "qty": "1 ½ cups"
+        },
+        {
+          "ingredient": "unbaked pie crust",
+          "qty": "1 (9 inch)"
+        },
+        {
+          "ingredient": "shredded Cheddar cheese",
+          "qty": "1 ½ cups"
+        },
+        {
+          "ingredient": "milk",
+          "qty": "1 cup"
+        },
+        {
+          "ingredient": "eggs, beaten",
+          "qty": "4 large"
+        },
+        {
+          "ingredient": "ground black pepper",
+          "qty": "½ teaspoon"
+        },
+        {
+          "ingredient": "smoked paprika",
+          "qty": "1 teaspoon"
         }
       ],
-      "instructions": "In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui."
+      "instructions": "Preheat the oven to 350 degrees F (175 degrees C). Place broccoli into a glass bowl. Cover the bowl with plastic wrap. Cook in the microwave in 1-minute intervals until evenly heated through, about 5 minutes; drain and set aside. Melt butter in a large saucepan over medium heat. Sauté onion and garlic in melted butter until onion is slightly translucent, about 5 minutes. Stir ham and broccoli into onion mixture, then transfer to pie crust. Beat together cheese, milk, eggs, and black pepper in a medium bowl; pour over ham mixture in crust. Sprinkle with paprika. Bake in the preheated oven until a knife inserted into the center comes out clean, 30 to 45 minutes."
     }
   ]
 }
