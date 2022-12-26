@@ -1,7 +1,7 @@
 @use '../base/' as *;
 
 .add-recipe {
-  max-width: 50rem;
+  max-width: 38rem;
   margin: $spacer-s auto $spacer-l auto;
   padding: $spacer-s $spacer-m;
   background-color: $clr-white;
@@ -9,15 +9,13 @@
   border-radius: 15px;
   box-shadow: rgba(255, 255, 255, 0.08) 0px 1px 0px inset, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, .5) 0px 0px 0px 1px;
 
-
     textarea,
     input {
       border: none;
       border-radius: 5px;
       box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, .5) 0px 0px 0px 1px;
 
-
-      background-color: $clr-white;
+      background-color: $clr-primary;
       resize: none;
 
         &:focus,
@@ -26,37 +24,43 @@
         }
     }
 
-    &__description,
-    &__instructions {
+    &__description-text-area,
+    &__instructions-text-area {
       padding: $spacer-xs $spacer-xxs;
+      width: clamp(10rem, 27rem, 95%);
+      margin: 0 auto;
     }
 
     &__name {
-      width: clamp(10rem, 25rem, 100%);
+      &-text-area  {
+        width: clamp(10rem, 27rem, 100%);
+      }
     }
 
     &__title {
       margin: 0;
     }
 
-    &__ingredient-list {
-      list-style: none;
-      padding: 0;
-      margin: $spacer-m 0 0 0;
-    }
-    
-    &__ingredient-item {
-      padding: .2rem .5rem;
-      background-color: $clr-white;
+    &__ingredient {
+      &-list {
+        list-style: none;
+        padding: 0;
+        margin: $spacer-m 0 0 0;
+      }
 
-      border-radius: 15px;
-      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-
-      width: clamp(90%, 25rem, 35rem);
-
-        &:not(:first-child) {
-          margin-top: $spacer-s;
-        }
+      &-item {
+        padding: .2rem .5rem;
+        background-color: $clr-white;
+  
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  
+        width: clamp(90%, 25rem, 35rem);
+  
+          &:not(:first-child) {
+            margin-top: $spacer-s;
+          }
+      }
     }
 
     &__add-ingredient-name,

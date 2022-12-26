@@ -1,32 +1,34 @@
 <template>
   <div class="container">
-    <div class="add-recipe d-flex flex-col g-m">
+    <section class="add-recipe d-flex flex-col g-m flex-parent-align-center">
       <h1 class="add-recipe__header text-center">
         Add a new recipe
       </h1>
-
-      <section class="wrapper d-flex flex-col g-xs">
-        <label for="recipe-name" class="add-recipe__title text-center">
+      <section class="add-recipe__name d-flex flex-col g-xs">
+        <label
+          for="recipe-name"
+          class="add-recipe__title text-center"
+        >
           Recipe name
         </label>
         <textarea
           v-model="name"
-          class="add-recipe__name text-center flex-item-align-center"
+          class="add-recipe__name-text-area text-center"
           name="recipe-name"
           id="recipe-name"
-          cols="20"
-          rows="1"
+          cols="30"
+          rows="2"
         >
         </textarea>
       </section>
 
-      <section class="wrapper d-flex flex-col g-s">
+      <section class="add-recipe__description d-flex flex-col g-s">
         <label for="recipe-desc" class="add-recipe__title text-center">
           Recipe Description
         </label>
         <textarea
           v-model="description"
-          class="add-recipe__description"
+          class="add-recipe__description-text-area"
           name="recipe-desc"
           id="recipe-desc"
           cols="80"
@@ -34,17 +36,19 @@
         >
         </textarea>
       </section>
-
-      <section class="wrapper d-flex flex-col g-s">
+      <section class="add-recipe__add-ingredients d-flex flex-col g-s">
         <h2 class="add-recipe__title text-center">
           Ingredients
         </h2>
-        <div class="add-recipe__add-ingredients d-flex flex-col flex-parent-align-center">
+        <div
+          class="add-recipe__add-ingredients-wrapper
+                d-flex flex-col flex-parent-align-center"
+        >
           <form class="add-recipe__add-ingredient mt-s d-flex g-xxs">
             <input
-              v-model="ingredientName" 
-              type="text" 
-              class="add-recipe__add-ingredient-name text-center" 
+              v-model="ingredientName"
+              type="text"
+              class="add-recipe__add-ingredient-name text-center"
               placeholder="Ingredient"
             >
             <input
@@ -61,13 +65,12 @@
               +
             </BaseButton>
           </form>
-
-          <transition-group 
-            class="add-recipe__ingredient-list d-flex flex-col g-xs" 
-            tag="ul" 
+          <transition-group
+            class="add-recipe__ingredient-list d-flex flex-col g-xs"
+            tag="ul"
             name="list"
           >
-            <div 
+            <div
               class="wrapper d-flex g-xs"
               v-for="(item, i) in ingredients"
               :key="item"
@@ -85,14 +88,13 @@
           </transition-group>
         </div>
       </section>
-
-      <section class="wrapper d-flex flex-col g-s">
+      <section class="add-recipe__instructions d-flex flex-col g-s">
         <label for="recipe-inst" class="add-recipe__title text-center">
           Instructions
         </label>
         <textarea
           v-model="instructions"
-          class="add-recipe__instructions"
+          class="add-recipe__instructions-text-area"
           name="recipe-inst"
           id="recipe-inst"
           cols="80"
@@ -100,14 +102,13 @@
         >
         </textarea>
       </section>
-
-      <BaseButton 
+      <BaseButton
         @click="submitRecipe()"
         class="btn-m btn-accent flex-item-align-center"
       >
         Add recipe
       </BaseButton>
-    </div>
+    </section>
   </div>
   
 </template>
