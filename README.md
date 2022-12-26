@@ -21,3 +21,7 @@ Recipes are stored in a json file powered by [json-server](https://www.npmjs.com
 - Run ```$ npm install```
 - Run ```$ npm run json-server``` to setup a json server
 - Run ```$ npm run serve``` to serve the project
+
+## Attribution
+
+Recipes are taken from [allrecipes](https://www.allrecipes.com/)
